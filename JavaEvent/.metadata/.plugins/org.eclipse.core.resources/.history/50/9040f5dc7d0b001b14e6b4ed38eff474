@@ -1,0 +1,13 @@
+package Listener;
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+
+public class MouseAdapterListener extends JFrame {
+	private JLabel la = new JLabel("Hello");
+	
+	public MouseAdapterListener() {
+		
+	}
+}

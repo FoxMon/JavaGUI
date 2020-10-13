@@ -1,0 +1,23 @@
+package Practice;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class MyGUI extends JFrame {
+	private JLabel la = new JLabel("Hello");
+	
+	public MyGUI() {
+		setTitle("Mouse event ex");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = getContentPane();
+		c.addMouseListener(new MouseAdapter() {
+			
+		});
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,15 @@
+package Practice;
+
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
+
+public class MyGUI extends JFrame {
+	public MyGUI() {
+		
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+}

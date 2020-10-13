@@ -1,0 +1,9 @@
+package javaproj;
+
+public class MyFrame extends JFrame {
+	public MyFrame() {
+		setTitle("640 x 480 스윙 프레임 만들기");
+		setSize(640, 480);
+		setVisible(true);
+	}
+}

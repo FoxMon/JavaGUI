@@ -1,0 +1,39 @@
+package Practice;
+
+import java.awt.event.*;
+import java.awt.*;
+import javax.swing.*;
+
+public class MyGUI extends JFrame {
+	private JLabel la = new JLabel("Hello");
+	
+	public MyGUI() {
+		setTitle("Mouse event ex");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container c = getContentPane();
+		c.addMouseListener(new MouseListener() {
+			@Override
+			public void mousePressed(MouseEvent e) {
+				private int x = e.getX();
+				private int y = e.getY();
+			}
+			
+			@Override
+			public void mouseReleased(MouseEvent e) {}
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {}
+			
+			@Override
+			public void mouseEntered(MouseEvent e) {}
+			
+			@Override
+			public void mouseExited(MouseEvent e) {}
+		});
+	}
+	
+	public static void main(String[] args) {
+		new MyGUI();
+	}
+}

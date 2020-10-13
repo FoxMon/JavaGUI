@@ -1,0 +1,20 @@
+package Practice;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class MyGUI extends JFrame {
+	public MyGUI() {
+		setTitle("My Frame");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container contentPane = getContentPane();
+		
+		contentPane.setBackground(Color.ORANGE);
+		contentPane.setLayout(new FlowLayout());
+	}
+	
+	public static void main(String[] args) {
+		new MyGUI();
+	}
+}

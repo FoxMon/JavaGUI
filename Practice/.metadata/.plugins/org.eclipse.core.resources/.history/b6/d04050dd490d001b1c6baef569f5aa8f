@@ -1,0 +1,27 @@
+package Practice;
+
+import java.awt.*;
+import javax.swing.*;
+
+public class MyGUI extends JFrame {
+	public MyGUI() {
+		setTitle("My Frame");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		Container contentPane = getContentPane();
+		
+		contentPane.setBackground(Color.ORANGE); // background color
+		contentPane.setLayout(new FlowLayout()); // content layout manager
+		
+		contentPane.add(new JButton("OK")); // add ok button
+		contentPane.add(new JButton("Cancel")); // add cancel button
+		contentPane.add(new JButton("Ignore")); // add ignore button
+		
+		setSize(300, 300);
+		setVisible(true);
+	}
+	
+	public static void main(String[] args) {
+		new MyGUI();
+	}
+}
